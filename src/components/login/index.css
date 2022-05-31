@@ -1,0 +1,10 @@
+.App {
+    background-color: rgb(249, 217, 237);
+    color: rgb(187, 15, 121);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1 {
+    font-weight: 300;
+}

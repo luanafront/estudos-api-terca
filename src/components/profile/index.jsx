@@ -58,7 +58,7 @@ const Profile = () => {
                 <p>Email: {profileData.email}</p>
                 <p>Nome: {profileData.first_name} {profileData.last_name}</p>
                 <p>Github desse Projeto:
-                        <a href="https://github.com/luanafront/estudos-api-segunda"> Clique AQUI</a>
+                        <a href="https://github.com/luanafront/estudos-api-terca"> Clique AQUI</a>
                 </p>
                 <Button 
                     variant="outlined" 

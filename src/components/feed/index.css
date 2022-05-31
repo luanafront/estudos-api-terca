@@ -1,0 +1,13 @@
+.perfil {
+    margin: 40px;
+    background-color: rgb(228, 180, 243);
+    padding: 20px;
+    border-radius: 25px;
+}
+.titulo__feed {
+    text-align: center;
+}
+.botoes{
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from '@mui/material/';
 import axios from "axios";
+import "./index.css"
 
 const Feed = () => {
     const navigate = useNavigate()
@@ -31,24 +32,27 @@ const Feed = () => {
     return (
         feedData === null ? 
         <p>Loading</p> :
-        <div>
-            <Button 
-                variant="outlined" 
-                color="secondary"
-                onClick={pushToMyProfile}
-            >
-                My profile
-            </Button>
-            <Button 
-                variant="outlined" 
-                color="secondary"
-                onClick={clearToken}
-            >
-                Logout
-            </Button>
+        <div className="feed">
+            <h1 className="titulo__feed">Feed</h1>
+            <div className="botoes">
+                <Button 
+                    variant="outlined" 
+                    color="secondary"
+                    onClick={pushToMyProfile}
+                >
+                    My profile
+                </Button>
+                <Button 
+                    variant="outlined" 
+                    color="secondary"
+                    onClick={clearToken}
+                >
+                    Logout
+                </Button>
+            </div>
             {feedData.map((profile, index)=>{
                 return (
-                    <div key={index}>
+                    <div className="perfil" key={index}>
                         <img alt="" src={profile.avatar}/>
                         <p>name: {profile.name}</p>
                         <p>email: {profile.email}</p>

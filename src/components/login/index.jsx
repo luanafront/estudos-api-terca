@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { TextField, Button } from '@mui/material/';
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import "./index.css"
 
 const Login = () => {
     const navigate = useNavigate()
@@ -37,6 +38,7 @@ const Login = () => {
 
   return (
     <div className="App">
+    <h1>Login</h1>
       <TextField 
         id="outlined-basic" 
         label="Email" 
