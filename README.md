@@ -5,9 +5,9 @@ Para quem ama sites funcionais, toma esse, haha. Estou aprendendo cada vez mais 
 ## Funcionalidade 
 > `React Router Dom` para interagir através dos botões.
 
-> Apagando os dados de `token`, caso o usuário não esteja logado, faz com que ele não possa simplesmente colocar a url da `api /profile/` por exemplo. Assim, para ele acessar o Feed e o Perfil ele esteja obrigatoriamente logado.
+> Protegendo rotas autenticadas por `token`, caso o usuário não esteja logado, faz com que ele não possa simplesmente colocar a url da `api /profile/` por exemplo. Assim, para ele acessar o Feed e o Perfil ele esteja obrigatoriamente logado.
 
-> Utilizei o `useEffect` para sempre que a página for recarregada as informações permaneça atráves do `localStorage`.
+> Utilizei o `useEffect` para sempre que a página for recarregada executar a função de verificação atráves do `localStorage`.
 
 >O site Feed traz informações da `api` que estou consumindo, no caso a do `mock api`.
 
